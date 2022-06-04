@@ -1,0 +1,48 @@
+@import '../_mixins.scss';
+
+button {
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 16vh;
+
+  @include smallDeviceSize {
+    padding: 0 10vw;
+  }
+
+  @include middleDeviceSize {
+    padding: 0 10vw;
+  }
+}
+
+.button {
+  width: 100%;
+  min-height: 2.5rem;
+  border-radius: 0.5rem;
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 2.2vh;
+  padding: 1.4vh 0;
+  margin-bottom: 1.5vh;
+  cursor: pointer;
+
+  @include middleDeviceSize {
+    font-size: 3vw;
+  }
+
+  &--active {
+    background-color: var(--green);
+
+    &:hover {
+      background-color: var(--hover);
+    }
+  }
+
+  &--disabled {
+    background-color: var(--disabled);
+    cursor: not-allowed;
+  }
+}

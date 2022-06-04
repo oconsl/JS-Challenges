@@ -1,0 +1,92 @@
+@import '../_mixins.scss';
+
+.container {
+  width: 100%;
+  padding: 0 16vh;
+
+  @include smallDeviceSize {
+    padding: 0 10vw;
+  }
+
+  @include middleDeviceSize {
+    padding: 0 10vw;
+  }
+}
+
+.condition {
+  font-size: 2.5vh;
+
+  @include smallDeviceSize {
+    font-size: 3vw;
+  }
+
+  @include middleDeviceSize {
+    font-size: 2.5vw;
+  }
+
+  &--valid {
+    color: var(--green);
+  }
+
+  &--invalid {
+    color: var(--red);
+  }
+}
+
+.icon {
+  width: 3vh;
+  aspect-ratio: 1 / 1;
+
+  @include smallDeviceSize {
+    width: 4vw;
+  }
+
+  @include middleDeviceSize {
+    width: 4vw;
+  }
+
+  &--valid {
+    filter: invert(38%) sepia(35%) saturate(4311%) hue-rotate(77deg) brightness(103%) contrast(91%);
+  }
+
+  &--invalid {
+    filter: invert(15%) sepia(78%) saturate(3948%) hue-rotate(340deg) brightness(99%) contrast(94%);
+  }
+}
+
+li {
+  list-style: none;
+  flex: 1
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 3vh;
+  padding: 1.3vh 0;
+
+  @include smallDeviceSize {
+    gap: 2vw;
+    padding: 2vw 0;
+  }
+
+  @include middleDeviceSize {
+    padding: 2vw 0;
+    gap: 2vw;
+  }
+}
+
+.title {
+  font-size: 3.1vh;
+  padding-bottom: 1.3vh;
+  margin-top: 4vh;
+
+  @include smallDeviceSize {
+    font-size: 4vw;
+  }
+
+  @include middleDeviceSize {
+    font-size: 3vw;
+  }
+}

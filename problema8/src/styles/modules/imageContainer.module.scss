@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+  height: 90%;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 2vh;
+  gap: 2vh;
+}
+
+.image__container {
+  max-width: 20%;
+  height: 30%;
+  flex-basis: 18%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border: dashed 3px white;
+  background-color: rgb(68, 68, 68);
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

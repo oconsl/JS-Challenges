@@ -1,0 +1,17 @@
+@mixin flexBox(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin smallDeviceSize() {
+	@media only screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin middleDeviceSize() {
+	@media only screen and (max-width: 992px) {
+		@content;
+	}
+}

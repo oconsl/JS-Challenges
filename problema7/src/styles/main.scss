@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary: #646ff0;
+	--secondary: #8bdee9;
+	--black-1: #121214;
+	--black-2: #181616;
+	--bg-1: #161414;
+	--bg-2: rgb(255, 255, 255);
+	--bg-3: #c5c5c5;
+	--gray-1: rgb(163, 163, 163);
+	--gray-2: #747474;
+	--black: black;
+	--white: rgb(206, 206, 206);
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--bg-1);
+}
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}

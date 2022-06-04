@@ -1,0 +1,23 @@
+@import '../_mixins.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  background-color: rgba(255, 255, 255,0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 4vh;
+  width: 30%;
+  height: 55%;
+}
+
+.message__container {
+  background-color: white;
+  flex: 1;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+}

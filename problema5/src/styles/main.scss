@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap');
+@import './_mixins.scss';
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--white)
+}
+
+:root {
+  font-family: 'Spline Sans Mono', monospace;
+  --green: #2b9e0b;
+  --hover: #40aa23;
+  --red: #d61a36;
+  --gray: #111111;
+  --disabled: #808080;
+  --white: rgb(253, 253, 253);
+  --focus: rgba(191, 242, 255,0.5);
+
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  @include flexBox();
+  flex-direction: column;
+  background-color: var(--gray);
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-size: 7vh;
+  margin: 1.7vh 0;
+
+  @include smallDeviceSize {
+    padding: 0 10vw;
+    font-size: 10vw;
+    text-align: center;
+    margin-bottom: 4vw;
+  }
+
+  @include middleDeviceSize {
+    padding: 0 10vw;
+    font-size: 8vw;
+    text-align: center;
+    margin-bottom: 3vw;
+  }
+}
+
+
+

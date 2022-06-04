@@ -1,0 +1,17 @@
+@import '../_mixins.scss';
+
+.container {
+  @include flexBox();
+  gap: 3vh;
+  flex: 1;
+}
+
+.input {
+  flex: 3;
+  font-family: 'Underdog', cursive;
+}
+
+.button {
+  flex: 1;
+  font-family: 'Underdog', cursive;
+}
